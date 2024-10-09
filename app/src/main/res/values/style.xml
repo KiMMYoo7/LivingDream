@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- In res/values/styles.xml -->
+    <style name="BlackIconButtonStyle">
+        <item name="android:background">@drawable/baseline_menu_24</item>
+        <item name="android:backgroundTint">@null</item> <!-- Avoid overriding color -->
+    </style>
+
+
+</resources>

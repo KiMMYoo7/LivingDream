@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menubackground"
+    tools:context="MenuFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!-- Calorie Deficit Calculator Button -->
+    <TextView
+        android:id="@+id/calorie_result_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No calorie result available"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:paddingBottom="16dp"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/lavender_border" />
+
+    <!-- Only the chart to display BMI progress -->
+    <Button
+        android:id="@+id/button_calculate_calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Calculate Calorie Deficit"
+        android:layout_marginTop="300dp"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/bmi_chart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/lavender_border" /> <!-- Apply the lavender border -->
+
+
+    <!-- Button to open BMI Calculation Activity -->
+    <Button
+        android:id="@+id/open_bmi_calculation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update BMI"
+        android:layout_marginTop="550dp" />
+
+</FrameLayout>

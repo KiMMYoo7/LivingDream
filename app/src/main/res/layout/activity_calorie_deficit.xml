@@ -1,0 +1,142 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/calorie_deficit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calorie Deficit Calculator"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp" />
+
+        <!-- Input Fields -->
+        <EditText
+            android:id="@+id/input_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your weight (kg)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/input_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your height (cm)"
+            android:inputType="numberDecimal" />
+
+        <!-- Gender Selection RadioGroup -->
+        <RadioGroup
+            android:id="@+id/radioGroup_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <!-- Activity Level Selection -->
+        <RadioGroup
+            android:id="@+id/radioGroup_activity_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/radio_sedentary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sedentary (little or no exercise)" />
+
+            <RadioButton
+                android:id="@+id/radio_lightly_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lightly active (light exercise 1-3 days/week)" />
+
+            <RadioButton
+                android:id="@+id/radio_moderately_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moderately active (moderate exercise 3-5 days/week)" />
+
+            <RadioButton
+                android:id="@+id/radio_very_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Very active (hard exercise 6-7 days/week)" />
+
+            <RadioButton
+                android:id="@+id/radio_super_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Super active (very hard exercise, physical job)" />
+        </RadioGroup>
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/button_calculate_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate Calorie Deficit"
+            android:layout_marginTop="16dp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:layout_marginVertical="16dp" />
+
+        <!-- Output Section (Calorie Results) -->
+        <TextView
+            android:id="@+id/calorie_result_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Results"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/calories_to_maintain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maintain Weight: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/calories_mild_loss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mild Weight Loss: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/calories_extreme_loss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extreme Weight Loss: "
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>
